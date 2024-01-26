@@ -85,7 +85,6 @@
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/button"
                     style="@android:style/Widget.Button"
-                    layout
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="32dp"
