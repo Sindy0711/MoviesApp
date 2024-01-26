@@ -164,6 +164,7 @@
                     android:id="@+id/imageView2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:layout_margin="5dp"
                     android:layout_weight="0.2"
                     app:srcCompat="@drawable/btn_1"
@@ -173,6 +174,7 @@
                     android:id="@+id/imageView3"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:layout_margin="5dp"
                     android:layout_weight="0.2"
                     app:srcCompat="@drawable/btn_2"
@@ -191,6 +193,7 @@
                     android:id="@+id/imageView5"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:layout_margin="5dp"
                     android:layout_weight="0.2"
                     android:src="@tools:sample/avatars"
@@ -201,6 +204,7 @@
                     android:id="@+id/imageView6"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:layout_margin="5dp"
                     android:layout_weight="0.2"
                     android:src="@tools:sample/avatars"
@@ -215,6 +219,7 @@
             android:layout_height="wrap_content"
             app:maxImageSize="30dp"
             app:layout_anchor="@id/app_bar"
+            style="@style/Floating"
             />
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
