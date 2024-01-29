@@ -36,6 +36,7 @@
                 android:gradientRadius="100%p"
                 android:centerX="0.7"
                 android:centerY="0.5"
+                />
 
         </shape>
     </item>
