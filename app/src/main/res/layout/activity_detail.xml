@@ -12,8 +12,10 @@
         android:background="@color/main_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -78,7 +80,7 @@
                     android:background="@drawable/bg_circle_dark"
                     android:padding="8dp"
 
-                    android:src="@drawable/btn_2"
+                    android:src="@drawable/fav"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:tint="@color/white" />
@@ -92,7 +94,25 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
 
+                <TextView
+                    android:id="@+id/movieNameTxt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="24dp"
+                    android:maxLines="2"
+                    android:text="title"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="HardcodedText" />
+
                 <LinearLayout
+                    android:id="@+id/linearLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="64dp"
@@ -113,7 +133,8 @@
                         android:textColor="@color/white"
                         app:drawableStartCompat="@drawable/star"
                         app:drawableTint="@color/white"
-                        tools:drawablePadding="5dp" />
+                        tools:drawablePadding="5dp"
+                        tools:ignore="HardcodedText" />
 
                     <TextView
                         android:id="@+id/movieTimeTxt"
@@ -125,8 +146,9 @@
                         android:text="0"
                         android:textColor="@color/white"
                         app:drawableStartCompat="@mipmap/ic_clock"
+                        app:drawableTint="@color/white"
                         tools:drawablePadding="5dp"
-                        app:drawableTint="@color/white" />
+                        tools:ignore="HardcodedText" />
 
                     <TextView
                         android:id="@+id/movieDateTxt"
@@ -138,11 +160,42 @@
                         android:textAlignment="viewEnd"
                         android:textColor="@color/white"
                         app:drawableStartCompat="@mipmap/ic_calendar"
+                        app:drawableTint="@color/white"
                         tools:drawablePadding="5dp"
-                        tools:ignore="RtlCompat"
-                        app:drawableTint="@color/white" />
+                        tools:ignore="HardcodedText,RtlCompat" />
                 </LinearLayout>
             </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_margin="16dp"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="Summary"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:drawableStartCompat="drawin"
+                app:drawableTint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/movieSummaryInfo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="test"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView10"
+                app:layout_constraintStart_toStartOf="@+id/textView10"
+                app:layout_constraintTop_toBottomOf="@+id/textView10"
+                tools:ignore="HardcodedText" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
