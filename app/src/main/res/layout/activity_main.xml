@@ -31,7 +31,8 @@
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="25sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
 
             <EditText
                 android:id="@+id/editTextText2"
@@ -48,7 +49,8 @@
                 android:padding="12dp"
                 android:textColor="@color/white"
                 android:textColorHint="@color/white"
-                android:textSize="12dp" />
+                android:textSize="12sp"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:id="@+id/textView8"
@@ -61,7 +63,8 @@
                 android:text="New Movies"
                 android:textColor="#ffc107"
                 android:textSize="18sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -105,7 +108,8 @@
                 android:text="Upcomming Movies"
                 android:textColor="#ffc107"
                 android:textSize="18sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -196,7 +200,6 @@
                     android:layout_gravity="center_vertical"
                     android:layout_margin="5dp"
                     android:layout_weight="0.2"
-                    android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/btn_3"
                     app:tint="@color/white" />
 
@@ -207,7 +210,6 @@
                     android:layout_gravity="center_vertical"
                     android:layout_margin="5dp"
                     android:layout_weight="0.2"
-                    android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/btn_4"
                     app:tint="@color/white" />
             </LinearLayout>
