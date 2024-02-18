@@ -44,7 +44,7 @@
                     android:layout_marginTop="116dp"
                     app:layout_constraintStart_toStartOf="@+id/imageView"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:srcCompat="@drawable/woman" />
+                    app:srcCompat="@drawable/woman" />
 
                 <TextView
                     android:id="@+id/textView"
@@ -83,7 +83,7 @@
                 android:background="@drawable/background_gradient2">
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/button"
+                    android:id="@+id/getInBtn"
                     style="@android:style/Widget.Button"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
