@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/main_background"
     android:focusable="true"
     android:focusableInTouchMode="true"
-    android:background="@color/main_background"
     tools:context=".Activity.MainActivity">
 
     <ScrollView
@@ -119,7 +119,7 @@
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/view2"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:clipToPadding="false"
                     android:minHeight="200dp"
@@ -129,7 +129,8 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0">
 
                 </androidx.recyclerview.widget.RecyclerView>
 
@@ -159,7 +160,9 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_gravity="bottom"
-            android:backgroundTint="#282f32">
+            android:backgroundTint="#282f32"
+            app:layout_anchor="@+id/app_bar"
+            app:layout_anchorGravity="bottom|center">
 
 
             <LinearLayout
@@ -191,10 +194,12 @@
                     android:id="@+id/imageView4"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:layout_weight="0.2"
+                    android:visibility="invisible"
                     app:srcCompat="@drawable/btn_3"
-                    tools:visibility="invisible"
-                    app:tint="@color/white" />
+                    app:tint="@color/white"
+                    tools:visibility="invisible" />
 
                 <ImageView
                     android:id="@+id/imageView5"
@@ -220,12 +225,11 @@
         </com.google.android.material.bottomappbar.BottomAppBar>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
+            style="@style/Floating"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:maxImageSize="30dp"
             app:layout_anchor="@id/app_bar"
-            style="@style/Floating"
-            />
+            app:maxImageSize="30dp" />
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

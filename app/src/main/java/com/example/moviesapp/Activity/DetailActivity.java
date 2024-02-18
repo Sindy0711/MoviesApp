@@ -98,7 +98,7 @@ public class DetailActivity extends AppCompatActivity {
         movieSummaryInfo = findViewById(R.id.movieSummaryInfo);
         movieActorsInfo = findViewById(R.id.movieActorInfo);
         backImg = findViewById(R.id.backImg);
-        recyclerView = findViewById(R.id.ImagesRecycleView);
+        recyclerView = findViewById(R.id.imagesRecyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
 
         backImg.setOnClickListener(v -> finish());
